@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="699.0" viewBox="0 0 760 699.0" role="img" aria-label="Step-by-step visual walkthrough">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="context-stroke"/></marker></defs>
+<rect x="1.0" y="1.0" width="758.0" height="697.0" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" fill="#1e293b" text-anchor="start" font-weight="600">Undirected Cycle (DFS) — same parent rule, recursive</text>
+<circle cx="35.0" cy="74.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="78.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">1</text>
+<text x="56.0" y="79.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">The DFS version of the same test: recurse into unvisited neighbors, passing WHO SENT</text>
+<text x="56.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">YOU.</text>
+<line x1="411.6" y1="164.0" x2="411.6" y2="230.0" stroke="#94a3b8" stroke-width="1.6"/>
+<line x1="431.0" y1="247.3" x2="611.4" y2="203.2" stroke="#94a3b8" stroke-width="1.6"/>
+<line x1="613.4" y1="193.3" x2="433.0" y2="149.2" stroke="#94a3b8" stroke-width="1.6"/>
+<circle cx="411.6" cy="144.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="411.6" y="149.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">2</text>
+<circle cx="411.6" cy="252.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="411.6" y="257.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">3</text>
+<circle cx="632.8" cy="198.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="632.8" y="203.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">4</text>
+<line x1="24.0" y1="300.0" x2="736.0" y2="300.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="320.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="324.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">2</text>
+<text x="56.0" y="325.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">2 → 3 → 4: at 4, neighbor 2 is visited and is NOT 4's parent (3) → cycle. The parent</text>
+<text x="56.0" y="344.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">exemption is one argument in the recursion — no extra state.</text>
+<line x1="411.6" y1="410.0" x2="411.6" y2="476.0" stroke="#16a34a" stroke-width="1.6"/>
+<line x1="431.0" y1="493.3" x2="611.4" y2="449.2" stroke="#16a34a" stroke-width="1.6"/>
+<line x1="613.4" y1="439.3" x2="433.0" y2="395.2" stroke="#dc2626" stroke-width="1.6"/>
+<circle cx="411.6" cy="390.0" r="18" fill="#fee2e2" stroke="#dc2626" stroke-width="1.4"/>
+<text x="411.6" y="395.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">2</text>
+<circle cx="411.6" cy="498.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="411.6" y="503.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">3</text>
+<circle cx="632.8" cy="444.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="632.8" y="449.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">4</text>
+<line x1="24.0" y1="546.0" x2="736.0" y2="546.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="566.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="570.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">3</text>
+<text x="56.0" y="571.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">DFS and BFS find the same answer; DFS is shorter to write, BFS avoids deep recursion</text>
+<text x="56.0" y="590.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">on long chains. Both O(V+E). Parallel-edge graphs need edge-ids instead of the</text>
+<text x="56.0" y="609.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">parent rule.</text>
+<text x="72.0" y="644.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">verdict</text>
+<rect x="84.0" y="625.0" width="180.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="174.0" y="644.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">triangle → cycle ✓</text>
+<rect x="274.0" y="625.0" width="261.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="404.5" y="644.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">rule → visited ∧ not parent</text>
+<text x="380.0" y="681.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">github.com/Sreenivas-Sadhu-Prabhakara · dsa series</text>
+</svg>
